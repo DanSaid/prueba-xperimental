@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X_perimental</title>
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina web oficial de X_perimental">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <section class="container">
+        <!--ENCABEZADO | LOGO | BARRA DE NAVEGACION-->
+
+        <header>
+
+            <section class="seccion_logo">
+                <a href="index.html"><img class="logo" src="assets/logo_x_perimental.png" alt="logo"></a>
+            </section>
+
+            <nav class="nav_bar">
+
+                    <ul>
+                        <li class="l1 box"><a class="box" href="cursos.html">CURSOS</a></li>
+                        <li class="l2 box"><a class="box" href="#">PAQUETES</a> </li>
+                        <li class="l3 box"><a class="box" href="#">SOFTWARE</a></li>
+                        <li class="l4 box"><a class="box" href="#">PREGUNTAS</a></li>
+                        <li class="l5 box"><a class="box" href="#">CONTACTO</a></li>
+                    </ul>
+            </nav>
+
+        </header>
+
+        <!--CONTENIDO IMAGEN / TEXTO | INFORMACION ATRACTIVA DE LA PAGINA-->
+        
+        <main>
+            <div class="div div1">
+                <p class="p_logo">NO LIMITES TU IDEA, HAZLA REALIDAD</p>
+                <video class="render_logo" src="assets/VIDEO OFICIAL.mp4"  autoplay loop>
+            </div>
+            <div class="div div2">
+                <div class="container_carousel">
+                  <ul class="slider">
+                    <li id="slide1"><img src="assets/imagen_rhino.png" alt="slide"></li>
+                    <li id="slide2"><img src="assets/imagen_autocad.png" alt="slide"></li>
+                    <li id="slide3"><img src="assets/imagen_tw_sk.png" alt="slide"></li>
+                    </ul>
+                  <ul class="menu">
+                    <li>
+                        <a href="#slide1"></a>
+                    </li>
+                    <li>
+                        <a href="#slide2"></a>
+                    </li>
+                    <li>
+                        <a href="#slide3"></a>
+                    </li>
+                    
+                  </ul>
+                </div>
+            </div>
+            <div class="div div3">
+                <p>DESCUBRE NUESTROS PAQUETES</p>
+                <video src="assets/VIDEO OFICIAL.mp4" autoplay loop>
+            </div>
+            <div class="div div4">
+
+                <p>CONOCE LOS SOFTWARE QUE TRABAJAMOS</p>
+                <img src="assets/modelo_senuelo_1.png" alt="modelo">
+
+            </div>
+            <div class="div div5">
+                <img src="assets/imagen_rhino.png" alt="modelo">
+                <p>SIGUENOS EN NUESTRAS REDES SOCIALES</p>
+            </div>
+        </main>
+
+        <!--PIE DE PAGINA-->
+
+        <footer>
+            <p>copyright x_perimental # si nos copian los demandamos</p>
+        </footer>
+
+       <!--ANIMACION LOGO PRO--> 
+
+       <section class="loader">
+        <section class="container_loader container_arriba"></section>
+        <img src="assets/logo_x_perimental.png" alt="logo_animacion">
+        <section class="divcitos">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <section class="container_loader container_abajo"></section>
+       </section>
+
+        <!--INTERACTIVIDAD / ACCIONES BOTONES-->
+
+        <script src="index.js"></script>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+<!--grid-template-rows: 70% 30%;
+    grid-template-columns: 0% 0%;
+    grid-template-areas: "logo logo"
+                         "nav   nav";-->
+
+<!-- 0% {
+        transform: translateX(-500%);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }-->
+
+<!--   0% {
+        transform: translateX(500%);
+    }
+    100% {
+        transform: translateX(0px);
+    }-->
+
+<!--@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', 'arial';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    position: absolute;
+    z-index:1;
+    width: 100%;
+    height:100%;
+    display: grid;
+    grid-template-rows: 17% 50% 50% 50% 50% 50% 10%;
+    grid-template-areas: "header   "
+                         "div1     "
+                         "div2     "
+                         "div3     "
+                         "div4     "
+                         "div5     "
+                         "footer   ";
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    grid-area: header;
+    display: inline-block;
+
+}
+
+.seccion_logo {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.logo {
+    width: 35%;
+    height: 35%;
+}
+
+.nav_bar {
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    background-color: rgb(76, 76, 76);
+    padding: 0px, 0px, 0px, 0px;
+    animation: 7s nav_movement ease-in-out;
+}
+
+@keyframes nav_movement{
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    57% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    57.1% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(700px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.nav_bar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+.nav_bar ul li a {
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    animation: 7s aparicion_main ease-in-out;
+}
+
+@keyframes aparicion_main {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    57% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    57.1% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(700px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+main div img {
+    width: 50%;
+    height: 50%;
+}
+
+.p_main {
+    color: white;
+    display: flex;
+    grid-area: main;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+div {
+    background-color: black;
+    display: flex;
+    justify-content: space-between ;
+    margin-top: 0;
+}
+
+.div1 {
+    grid-area: div1;
+    
+}
+
+.div2 {
+    grid-area: div2;
+    
+}
+
+.div3 {
+    grid-area: div3;
+    
+}
+
+.div4 {
+    grid-area: div4;
+    
+}
+
+.div5 {
+    grid-area: div5;
+    
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: flex-end;
+    animation: 7s footer ease-in-out;
+}
+
+@keyframes footer {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    57% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    57.1% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(700px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.loader {
+    background: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+    animation: 2s loader 2s linear forwards;
+    
+}
+
+.container_arriba {
+    margin-bottom: 500px;
+    background-color: black;
+    animation: transition_loader_up 2s linear forwards;
+}
+
+.container_abajo {
+    margin-top: 500px;
+    background-color: black;
+    animation: transition_loader_down 2s linear forwards;
+}
+
+.loader img {
+    animation: 2s logo_movimiento 2s ease-in-out;
+}
+
+@keyframes logo_movimiento {
+    0% {
+        transform: scale(1) translateY(0%);
+    }
+
+    100% {
+        transform: scale(0.47) translateY(-364%);
+    }
+}
+
+.container_loader {
+    position: absolute;
+    width: 100%;
+    height: 71%;
+}
+
+@keyframes transition_loader_up {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes transition_loader_down {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    95% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}-->
